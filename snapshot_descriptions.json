@@ -1,0 +1,842 @@
+{
+    "0": {
+        "Campo Series 4": "Volume",
+        "Campo Genérico": "VolumeFinanc",
+        "Descrição do Campo Atualizado": "Volume Acumulado em dinheiro"
+    },
+    "1": {
+        "Campo Series 4": "%Ultimo",
+        "Campo Genérico": "%Ultimo",
+        "Descrição do Campo Atualizado": "Percentual do Ultimo"
+    },
+    "2": {
+        "Campo Series 4": "NMOfCompra",
+        "Campo Genérico": "NMOCompra",
+        "Descrição do Campo Atualizado": "Numero da Melhor Oferta de Compra"
+    },
+    "3": {
+        "Campo Series 4": "NMOfVenda",
+        "Campo Genérico": "NMOVenda",
+        "Descrição do Campo Atualizado": "Numero da Melhor Oferta de Venda"
+    },
+    "4": {
+        "Campo Series 4": "AgMOC",
+        "Campo Genérico": "AgMOC",
+        "Descrição do Campo Atualizado": "Agente da Melhor Oferta de Compra"
+    },
+    "5": {
+        "Campo Series 4": "AgMOV",
+        "Campo Genérico": "AgMOV",
+        "Descrição do Campo Atualizado": "Agente da Melhor Oferta de Venda"
+    },
+    "6": {
+        "Campo Series 4": "QtdeMOCompra",
+        "Campo Genérico": "QtdeMOCompra",
+        "Descrição do Campo Atualizado": "Qtde da Melhor Oferta de Compra"
+    },
+    "7": {
+        "Campo Series 4": "QtdeMOVenda",
+        "Campo Genérico": "QtdeMOVenda",
+        "Descrição do Campo Atualizado": "Qtde da Melhor Oferta de Venda"
+    },
+    "8": {
+        "Campo Series 4": "PrecoExercicio",
+        "Campo Genérico": "PrecoExercicio ",
+        "Descrição do Campo Atualizado": "Preco do Exercicio da Opcao"
+    },
+    "9": {
+        "Campo Series 4": "DataVencto",
+        "Campo Genérico": "DataVencto ",
+        "Descrição do Campo Atualizado": "Data de Vencimento do Ativo"
+    },
+    "0A": {
+        "Campo Series 4": "LoteNeg",
+        "Campo Genérico": "LoteNeg",
+        "Descrição do Campo Atualizado": "Lote de Negociacao de um Ativo"
+    },
+    "0B": {
+        "Campo Series 4": "Retorno",
+        "Campo Genérico": "Retorno",
+        "Descrição do Campo Atualizado": "Retorno"
+    },
+    "0C": {
+        "Campo Series 4": "PrecoAjuste",
+        "Campo Genérico": "PrecoAjuste ",
+        "Descrição do Campo Atualizado": "Preco de Ajuste do Ativo"
+    },
+    "0D": {
+        "Campo Series 4": "DUteis",
+        "Campo Genérico": "DUteis",
+        "Descrição do Campo Atualizado": "Dias Uteis"
+    },
+    "0E": {
+        "Campo Series 4": "DCorridos",
+        "Campo Genérico": "DCorridos",
+        "Descrição do Campo Atualizado": "Dias Corridos "
+    },
+    "0F": {
+        "Campo Series 4": "Limpeza",
+        "Campo Genérico": "Limpeza",
+        "Descrição do Campo Atualizado": "Limpeza"
+    },
+    "10": {
+        "Campo Series 4": "Ultimo",
+        "Campo Genérico": "Ultimo",
+        "Descrição do Campo Atualizado": "Preco do Ultimo Negocio"
+    },
+    "11": {
+        "Campo Series 4": "ValorInf",
+        "Campo Genérico": "ValorInf",
+        "Descrição do Campo Atualizado": "Valor Informativo"
+    },
+    "12": {
+        "Campo Series 4": "DataContrato",
+        "Campo Genérico": "DataContrato",
+        "Descrição do Campo Atualizado": "Data do Contrato"
+    },
+    "13": {
+        "Campo Series 4": "IDdoNeg",
+        "Campo Genérico": "IDdoNeg",
+        "Descrição do Campo Atualizado": "ID do Negocio"
+    },
+    "14": {
+        "Campo Series 4": "Compra",
+        "Campo Genérico": "Compra",
+        "Descrição do Campo Atualizado": "Preco da Melhor Oferta de Compra"
+    },
+    "15": {
+        "Campo Series 4": "Venda",
+        "Campo Genérico": "Venda",
+        "Descrição do Campo Atualizado": "Preco da Melhor Oferta de Venda"
+    },
+    "16": {
+        "Campo Series 4": "Maximo",
+        "Campo Genérico": "Maximo",
+        "Descrição do Campo Atualizado": "Valor de Maximo do Dia"
+    },
+    "17": {
+        "Campo Series 4": "Minimo",
+        "Campo Genérico": "Minimo",
+        "Descrição do Campo Atualizado": "Valor de Minimo do Dia"
+    },
+    "18": {
+        "Campo Series 4": "Abertura",
+        "Campo Genérico": "Abertura",
+        "Descrição do Campo Atualizado": "Valor de Abertura do Dia"
+    },
+    "19": {
+        "Campo Series 4": "QtdeAcum",
+        "Campo Genérico": "QtdeAcum",
+        "Descrição do Campo Atualizado": "Qtde Acumulada"
+    },
+    "1A": {
+        "Campo Series 4": "FechAnt",
+        "Campo Genérico": "Fechamento",
+        "Descrição do Campo Atualizado": "Fechamento Anterior"
+    },
+    "1B": {
+        "Campo Series 4": "ContrAberto",
+        "Campo Genérico": "ContrAberto",
+        "Descrição do Campo Atualizado": "Qtde de Contratos em Aberto"
+    },
+    "1C": {
+        "Campo Series 4": "QtdeUltimo",
+        "Campo Genérico": "QtdeUltimo",
+        "Descrição do Campo Atualizado": "Qtde do Ultimo Negocio"
+    },
+    "1D": {
+        "Campo Series 4": "SomaQtdeMOC",
+        "Campo Genérico": "SomaQtdeMOC",
+        "Descrição do Campo Atualizado": "Soma das Qtde da Melhor Oferta de Compra"
+    },
+    "1E": {
+        "Campo Series 4": "SomaQtdeMOV",
+        "Campo Genérico": "SomaQtdeMOV",
+        "Descrição do Campo Atualizado": "Soma das Qtde da Melhor Oferta de Venda"
+    },
+    "1F": {
+        "Campo Series 4": "Evolucao",
+        "Campo Genérico": "Evolucao",
+        "Descrição do Campo Atualizado": "Evolucao do Ultimo"
+    },
+    "20": {
+        "Campo Series 4": "AgCompra",
+        "Campo Genérico": "AgCompra",
+        "Descrição do Campo Atualizado": "Corretora que Comprou o Ativo"
+    },
+    "21": {
+        "Campo Series 4": "AgVenda",
+        "Campo Genérico": "AgVenda",
+        "Descrição do Campo Atualizado": "Corretora que Vendeu o Ativo"
+    },
+    "22": {
+        "Campo Series 4": "NumNegocio",
+        "Campo Genérico": "NumNegocio",
+        "Descrição do Campo Atualizado": "Num de Negocios efetuados durante o Dia"
+    },
+    "23": {
+        "Campo Series 4": "PrecoMedio",
+        "Campo Genérico": "PrecoMedio ",
+        "Descrição do Campo Atualizado": "Preco Medio "
+    },
+    "24": {
+        "Campo Series 4": "Hora",
+        "Campo Genérico": "Hora",
+        "Descrição do Campo Atualizado": "Hora do Ultimo Negocio realizado"
+    },
+    "25": {
+        "Campo Series 4": "Equivalencia",
+        "Campo Genérico": "Equivalencia",
+        "Descrição do Campo Atualizado": "Equivalencia"
+    },
+    "26": {
+        "Campo Series 4": "DifUltimo",
+        "Campo Genérico": "DifUltimo",
+        "Descrição do Campo Atualizado": "Dif entre o Ultimo e o Fech. Anterior"
+    },
+    "27": {
+        "Campo Series 4": "%12Meses",
+        "Campo Genérico": "%12Meses",
+        "Descrição do Campo Atualizado": "Variacao Percentual em 12 Meses "
+    },
+    "28": {
+        "Campo Series 4": "Data",
+        "Campo Genérico": "Data",
+        "Descrição do Campo Atualizado": "Data do Ultimo Negocio realizado"
+    },
+    "29": {
+        "Campo Series 4": "%Mes",
+        "Campo Genérico": "%Mes",
+        "Descrição do Campo Atualizado": "Variacao Percentual no Mes "
+    },
+    "2A": {
+        "Campo Series 4": "%Ano",
+        "Campo Genérico": "%Ano",
+        "Descrição do Campo Atualizado": "Variacao Percentual no Ano "
+    },
+    "2B": {
+        "Campo Series 4": "Ranking",
+        "Campo Genérico": "Ranking",
+        "Descrição do Campo Atualizado": "Ranking do Ativo"
+    },
+    "2C": {
+        "Campo Series 4": "SeqContrato",
+        "Campo Genérico": "SeqContrato",
+        "Descrição do Campo Atualizado": "SeqContrato"
+    },
+    "30": {
+        "Campo Series 4": "Compra2",
+        "Campo Genérico": "Compra2",
+        "Descrição do Campo Atualizado": "Preco da 2 Melhor Oferta de Compra"
+    },
+    "31": {
+        "Campo Series 4": "Compra3",
+        "Campo Genérico": "Compra3",
+        "Descrição do Campo Atualizado": "Preco da 3 Melhor Oferta de Compra"
+    },
+    "32": {
+        "Campo Series 4": "Compra4",
+        "Campo Genérico": "Compra4",
+        "Descrição do Campo Atualizado": "Preco da 4 Melhor Oferta de Compra"
+    },
+    "33": {
+        "Campo Series 4": "Compra5",
+        "Campo Genérico": "Compra5",
+        "Descrição do Campo Atualizado": "Preco da 5 Melhor Oferta de Compra"
+    },
+    "34": {
+        "Campo Series 4": "Venda2",
+        "Campo Genérico": "Venda2",
+        "Descrição do Campo Atualizado": "Preco da 2 Melhor Oferta de Venda"
+    },
+    "35": {
+        "Campo Series 4": "Venda3",
+        "Campo Genérico": "Venda3",
+        "Descrição do Campo Atualizado": "Preco da 3 Melhor Oferta de Venda"
+    },
+    "36": {
+        "Campo Series 4": "Venda4",
+        "Campo Genérico": "Venda4",
+        "Descrição do Campo Atualizado": "Preco da 4 Melhor Oferta de Venda"
+    },
+    "37": {
+        "Campo Series 4": "Venda5",
+        "Campo Genérico": "Venda5",
+        "Descrição do Campo Atualizado": "Preco da 5 Melhor Oferta de Venda"
+    },
+    "38": {
+        "Campo Series 4": "QtdeMOCompra2",
+        "Campo Genérico": "QtdeMOCompra2",
+        "Descrição do Campo Atualizado": "Qtde da 2 Melhor Oferta de Compra"
+    },
+    "39": {
+        "Campo Series 4": "QtdeMOCompra3",
+        "Campo Genérico": "QtdeMOCompra3",
+        "Descrição do Campo Atualizado": "Qtde da 3 Melhor Oferta de Compra"
+    },
+    "3A": {
+        "Campo Series 4": "QtdeMOCompra4",
+        "Campo Genérico": "QtdeMOCompra4",
+        "Descrição do Campo Atualizado": "Qtde da 4 Melhor Oferta de Compra"
+    },
+    "3B": {
+        "Campo Series 4": "QtdeMOCompra5",
+        "Campo Genérico": "QtdeMOCompra5",
+        "Descrição do Campo Atualizado": "Qtde da 5 Melhor Oferta de Compra"
+    },
+    "3C": {
+        "Campo Series 4": "QtdeMOVenda2",
+        "Campo Genérico": "QtdeMOVenda2",
+        "Descrição do Campo Atualizado": "Qtde da 2 Melhor Oferta de Venda"
+    },
+    "3D": {
+        "Campo Series 4": "QtdeMOVenda3",
+        "Campo Genérico": "QtdeMOVenda3",
+        "Descrição do Campo Atualizado": "Qtde da 3 Melhor Oferta de Venda"
+    },
+    "3E": {
+        "Campo Series 4": "QtdeMOVenda4",
+        "Campo Genérico": "QtdeMOVenda4",
+        "Descrição do Campo Atualizado": "Qtde da 4 Melhor Oferta de Venda"
+    },
+    "3F": {
+        "Campo Series 4": "QtdeMOVenda5",
+        "Campo Genérico": "QtdeMOVenda5",
+        "Descrição do Campo Atualizado": "Qtde da 5 Melhor Oferta de Venda"
+    },
+    "40": {
+        "Campo Series 4": "AgCompra2",
+        "Campo Genérico": "AgCompra2",
+        "Descrição do Campo Atualizado": "Corretora2 que Comprou o Ativo"
+    },
+    "41": {
+        "Campo Series 4": "AgCompra3",
+        "Campo Genérico": "AgCompra3",
+        "Descrição do Campo Atualizado": "Corretora3 que Comprou o Ativo"
+    },
+    "42": {
+        "Campo Series 4": "AgCompra4",
+        "Campo Genérico": "AgCompra4",
+        "Descrição do Campo Atualizado": "Corretora4 que Comprou o Ativo"
+    },
+    "43": {
+        "Campo Series 4": "AgCompra5",
+        "Campo Genérico": "AgCompra5",
+        "Descrição do Campo Atualizado": "Corretora5 que Comprou o Ativo"
+    },
+    "44": {
+        "Campo Series 4": "AgVenda2",
+        "Campo Genérico": "AgVenda2",
+        "Descrição do Campo Atualizado": "Corretora2 que Vendeu o Ativo"
+    },
+    "45": {
+        "Campo Series 4": "AgVenda3",
+        "Campo Genérico": "AgVenda3",
+        "Descrição do Campo Atualizado": "Corretora3 que Vendeu o Ativo"
+    },
+    "46": {
+        "Campo Series 4": "AgVenda4",
+        "Campo Genérico": "AgVenda4",
+        "Descrição do Campo Atualizado": "Corretora4 que Vendeu o Ativo"
+    },
+    "47": {
+        "Campo Series 4": "AgVenda5",
+        "Campo Genérico": "AgVenda5",
+        "Descrição do Campo Atualizado": "Corretora5 que Vendeu o Ativo"
+    },
+    "48": {
+        "Campo Series 4": "HoraBolsa",
+        "Campo Genérico": "HoraBolsa",
+        "Descrição do Campo Atualizado": "HoraBolsa"
+    },
+    "49": {
+        "Campo Series 4": "AbertRegular",
+        "Campo Genérico": "AbertRegular",
+        "Descrição do Campo Atualizado": "Horario de Abertura do Mercado Regular  "
+    },
+    "4A": {
+        "Campo Series 4": "FechRegular",
+        "Campo Genérico": "FechRegular",
+        "Descrição do Campo Atualizado": "Horario de Fech do Mercado Regular"
+    },
+    "4B": {
+        "Campo Series 4": "AbertNoturno",
+        "Campo Genérico": "AbertNoturno",
+        "Descrição do Campo Atualizado": "Horario de Abert. do Mercado After"
+    },
+    "4C": {
+        "Campo Series 4": "FechNoturno",
+        "Campo Genérico": "FechNoturno",
+        "Descrição do Campo Atualizado": "Horario de Fech. do Mercado After"
+    },
+    "4D": {
+        "Campo Series 4": "Root",
+        "Campo Genérico": "Root ",
+        "Descrição do Campo Atualizado": "Root do Ativo"
+    },
+    "4F": {
+        "Campo Series 4": "Volatilidade",
+        "Campo Genérico": "Volatilidade",
+        "Descrição do Campo Atualizado": "Volatilidade do Ativo"
+    },
+    "50": {
+        "Campo Series 4": "TipoProvento",
+        "Campo Genérico": "TipoProvento",
+        "Descrição do Campo Atualizado": "Indica o tipo do Provento"
+    },
+    "51": {
+        "Campo Series 4": "FatorProvento",
+        "Campo Genérico": "FatorProvento",
+        "Descrição do Campo Atualizado": "Fator aplicado no Provento"
+    },
+    "52": {
+        "Campo Series 4": "AbertYield",
+        "Campo Genérico": "AbertYield",
+        "Descrição do Campo Atualizado": "Valor de Abertura em taxa de retorno"
+    },
+    "53": {
+        "Campo Series 4": "MaxYield",
+        "Campo Genérico": "MaxYield",
+        "Descrição do Campo Atualizado": "Valor de Maximo em taxa de retorno"
+    },
+    "54": {
+        "Campo Series 4": "MinYield",
+        "Campo Genérico": "MinYield",
+        "Descrição do Campo Atualizado": "Valor de Minimo em taxa de retorno"
+    },
+    "55": {
+        "Campo Series 4": "PcoMedYield",
+        "Campo Genérico": "PcoMedYield",
+        "Descrição do Campo Atualizado": "Valor de Preco Medio em taxa de retorno"
+    },
+    "56": {
+        "Campo Series 4": "UltimoYield",
+        "Campo Genérico": "UltimoYield",
+        "Descrição do Campo Atualizado": "Valor de Ultimo em taxa de retorno"
+    },
+    "57": {
+        "Campo Series 4": "FechAntYield",
+        "Campo Genérico": "FechAntYield",
+        "Descrição do Campo Atualizado": "Valor de Fechamento em taxa de retorno"
+    },
+    "58": {
+        "Campo Series 4": "DifYield",
+        "Campo Genérico": "DifYield",
+        "Descrição do Campo Atualizado": "Valor Calculado:((UltimoYield - FechYield)/FechYield)"
+    },
+    "59": {
+        "Campo Series 4": "%Yield",
+        "Campo Genérico": "%Yield",
+        "Descrição do Campo Atualizado": "Valor Calculado:((UltimoYield - FechYield)/FechYield)X100"
+    },
+    "5A": {
+        "Campo Series 4": "OfcYield",
+        "Campo Genérico": "OfcYield",
+        "Descrição do Campo Atualizado": "Valor da Oferta de Compra em taxa de retorno"
+    },
+    "5B": {
+        "Campo Series 4": "OfvYield",
+        "Campo Genérico": "OfvYield",
+        "Descrição do Campo Atualizado": "Valor da Oferta de Venda em taxa de retorno"
+    },
+    "5C": {
+        "Campo Series 4": "Cupon",
+        "Campo Genérico": "Cupon",
+        "Descrição do Campo Atualizado": "Valor do Cupon"
+    },
+    "5D": {
+        "Campo Series 4": "MaxAno",
+        "Campo Genérico": "MaxAno",
+        "Descrição do Campo Atualizado": "Maximo do Ano"
+    },
+    "5E": {
+        "Campo Series 4": "MinAno",
+        "Campo Genérico": "MinAno",
+        "Descrição do Campo Atualizado": "Minimo do Ano"
+    },
+    "5F": {
+        "Campo Series 4": "Dif12meses",
+        "Campo Genérico": "Dif12Meses",
+        "Descrição do Campo Atualizado": "Diferencial em 12 meses"
+    },
+    "60": {
+        "Campo Series 4": "Ult12meses",
+        "Campo Genérico": "Ult12Meses",
+        "Descrição do Campo Atualizado": "Fechamento 12 meses atras"
+    },
+    "61": {
+        "Campo Series 4": "MargemManut",
+        "Campo Genérico": "MargemManut",
+        "Descrição do Campo Atualizado": "Margem de Manutencao"
+    },
+    "62": {
+        "Campo Series 4": "MargemInicial",
+        "Campo Genérico": "MargemInicial",
+        "Descrição do Campo Atualizado": "Margem inicial para o limite Minimo"
+    },
+    "63": {
+        "Campo Series 4": "StepPreco",
+        "Campo Genérico": "StepPreco",
+        "Descrição do Campo Atualizado": "Indica o valor do Step de cada Ativo"
+    },
+    "64": {
+        "Campo Series 4": "FatorNeg",
+        "Campo Genérico": "FatorNeg",
+        "Descrição do Campo Atualizado": "Fator de Negociacao do Ativo"
+    },
+    "65": {
+        "Campo Series 4": "FracaoMaxima",
+        "Campo Genérico": "FracaoMaxima",
+        "Descrição do Campo Atualizado": "FracaoMaxima"
+    },
+    "66": {
+        "Campo Series 4": "Fracao",
+        "Campo Genérico": "Fracao",
+        "Descrição do Campo Atualizado": "Numero de Casas decimais do ativo"
+    },
+    "67": {
+        "Campo Series 4": "DifMaxMin",
+        "Campo Genérico": "DifMaxMin",
+        "Descrição do Campo Atualizado": "Diferenca entre o preco Max e Min"
+    },
+    "68": {
+        "Campo Series 4": "MaxOC",
+        "Campo Genérico": "MaxOC",
+        "Descrição do Campo Atualizado": "Preco Maximo da Oferta de Compra"
+    },
+    "69": {
+        "Campo Series 4": "MinOV",
+        "Campo Genérico": "MinOV",
+        "Descrição do Campo Atualizado": "Preco Minimo da Oferta de Venda"
+    },
+    "6A": {
+        "Campo Series 4": "QtdeTitulos",
+        "Campo Genérico": "QtdeTitulos",
+        "Descrição do Campo Atualizado": "Quantidade de Titulos"
+    },
+    "6B": {
+        "Campo Series 4": "QtdeMedia",
+        "Campo Genérico": "QtdeMedia",
+        "Descrição do Campo Atualizado": "Qtde Media dos Ultimos Pregoes"
+    },
+    "6C": {
+        "Campo Series 4": "%PrecoND",
+        "Campo Genérico": "%PrecoND",
+        "Descrição do Campo Atualizado": "Porcentagem Preco"
+    },
+    "6D": {
+        "Campo Series 4": "%QtdeND",
+        "Campo Genérico": "%QtdeND",
+        "Descrição do Campo Atualizado": "Porcentagem Quantidade ND"
+    },
+    "6E": {
+        "Campo Series 4": "%CapSoclND",
+        "Campo Genérico": "%CapSocND",
+        "Descrição do Campo Atualizado": "Porcentagem Capital Social ND"
+    },
+    "6F": {
+        "Campo Series 4": "%PrecoNC",
+        "Campo Genérico": "%PrecoNC",
+        "Descrição do Campo Atualizado": "Porcentagem Preco NC"
+    },
+    "70": {
+        "Campo Series 4": "%QtdeNC",
+        "Campo Genérico": "%QtdeNC",
+        "Descrição do Campo Atualizado": "Porcentagem Quantidade NC"
+    },
+    "71": {
+        "Campo Series 4": "%CapSocNC",
+        "Campo Genérico": "%CapSocNC",
+        "Descrição do Campo Atualizado": "Porcentagem Capital Social NC"
+    },
+    "72": {
+        "Campo Series 4": "VarDinamica",
+        "Campo Genérico": "VarDinamica",
+        "Descrição do Campo Atualizado": "Oferta não atendida"
+    },
+    "73": {
+        "Campo Series 4": "VarEstatica",
+        "Campo Genérico": "VarEstatica",
+        "Descrição do Campo Atualizado": "Qtde não atendida"
+    },
+    "74": {
+        "Campo Series 4": "PrecoAjusteAnt",
+        "Campo Genérico": "PcoAjusteAnt",
+        "Descrição do Campo Atualizado": "Valor do Ajuste do Dia anterior"
+    },
+    "75": {
+        "Campo Series 4": "%Ajuste",
+        "Campo Genérico": "%Ajuste",
+        "Descrição do Campo Atualizado": "Percentual do Ajuste "
+    },
+    "76": {
+        "Campo Series 4": "DifAjuste",
+        "Campo Genérico": "DifAjuste",
+        "Descrição do Campo Atualizado": "Diferencial do Ajuste"
+    },
+    "77": {
+        "Campo Series 4": "%Abertura",
+        "Campo Genérico": "%Abertura",
+        "Descrição do Campo Atualizado": "Percentual da abertura "
+    },
+    "78": {
+        "Campo Series 4": "DifAbertura",
+        "Campo Genérico": "DifAbertura",
+        "Descrição do Campo Atualizado": "Diferencial da Abertura"
+    },
+    "79": {
+        "Campo Series 4": "DifAno",
+        "Campo Genérico": "DifAno",
+        "Descrição do Campo Atualizado": "Diferencial do Ano"
+    },
+    "7A": {
+        "Campo Series 4": "UltAno",
+        "Campo Genérico": "UltAno",
+        "Descrição do Campo Atualizado": "Ultimo do Ano anterior"
+    },
+    "7B": {
+        "Campo Series 4": "Max12meses",
+        "Campo Genérico": "Max12Meses",
+        "Descrição do Campo Atualizado": "Maximo em 12 meses"
+    },
+    "7C": {
+        "Campo Series 4": "Min12meses",
+        "Campo Genérico": "Min12Meses",
+        "Descrição do Campo Atualizado": "Minimo em 12 meses"
+    },
+    "7D": {
+        "Campo Series 4": "StatusCto",
+        "Campo Genérico": "Status",
+        "Descrição do Campo Atualizado": "Mudanca do Estado do Ativo"
+    },
+    "7E": {
+        "Campo Series 4": "StatusGrupo",
+        "Campo Genérico": "StatusGrupo",
+        "Descrição do Campo Atualizado": "Estado do Grupo"
+    },
+    "7F": {
+        "Campo Series 4": "GrupoPapel",
+        "Campo Genérico": "GrupoPapel",
+        "Descrição do Campo Atualizado": "Grupo que o Ativo Pertence"
+    },
+    "80": {
+        "Campo Series 4": "LimiteMin",
+        "Campo Genérico": "LimiteMin",
+        "Descrição do Campo Atualizado": "Limite Minimo enviada pela Bolsa"
+    },
+    "81": {
+        "Campo Series 4": "LimiteMax",
+        "Campo Genérico": "LimiteMax",
+        "Descrição do Campo Atualizado": "Limite Maximo enviada pela Bolsa"
+    },
+    "82": {
+        "Campo Series 4": "InicioLeilao",
+        "Campo Genérico": "InicioLeilao",
+        "Descrição do Campo Atualizado": "Hora de inicio do leilao"
+    },
+    "83": {
+        "Campo Series 4": "FimLeilao",
+        "Campo Genérico": "FimLeilao",
+        "Descrição do Campo Atualizado": "Hora de fim do leilao"
+    },
+    "84": {
+        "Campo Series 4": "PcoTeoLeilao",
+        "Campo Genérico": "PcoTeoLeilao",
+        "Descrição do Campo Atualizado": "Preco teorico do leilao"
+    },
+    "85": {
+        "Campo Series 4": "QtdePcoTLeilao",
+        "Campo Genérico": "QtdePcoTLeilao",
+        "Descrição do Campo Atualizado": "Qtde do Preco teorico do leilao"
+    },
+    "86": {
+        "Campo Series 4": "EstiloOpcoes",
+        "Campo Genérico": "EstiloOpcoes",
+        "Descrição do Campo Atualizado": "Estilo das Opcoes"
+    },
+    "87": {
+        "Campo Series 4": "Venda6",
+        "Campo Genérico": "Venda6",
+        "Descrição do Campo Atualizado": "Preco da 6 Melhor Oferta de Venda"
+    },
+    "88": {
+        "Campo Series 4": "QtdeMOVenda6",
+        "Campo Genérico": "QtdeMOVenda6",
+        "Descrição do Campo Atualizado": "Qtde da 6 Melhor Oferta de Venda"
+    },
+    "89": {
+        "Campo Series 4": "AgVenda6",
+        "Campo Genérico": "AgVenda6",
+        "Descrição do Campo Atualizado": "Corretora6 que Vendeu o Ativo"
+    },
+    "8A": {
+        "Campo Series 4": "Venda7",
+        "Campo Genérico": "Venda7",
+        "Descrição do Campo Atualizado": "Preco da 7 Melhor Oferta de Venda"
+    },
+    "8B": {
+        "Campo Series 4": "QtdeMOVenda7",
+        "Campo Genérico": "QtdeMOVenda7",
+        "Descrição do Campo Atualizado": "Qtde da 7 Melhor Oferta de Venda"
+    },
+    "8C": {
+        "Campo Series 4": "AgVenda7",
+        "Campo Genérico": "AgVenda7",
+        "Descrição do Campo Atualizado": "Corretora7 que Vendeu o Ativo"
+    },
+    "8D": {
+        "Campo Series 4": "Venda8",
+        "Campo Genérico": "Venda8",
+        "Descrição do Campo Atualizado": "Preco da 8 Melhor Oferta de Venda"
+    },
+    "8E": {
+        "Campo Series 4": "QtdeMOVenda8",
+        "Campo Genérico": "QtdeMOVenda8",
+        "Descrição do Campo Atualizado": "Qtde da 8 Melhor Oferta de Venda"
+    },
+    "8F": {
+        "Campo Series 4": "AgVenda8",
+        "Campo Genérico": "AgVenda8",
+        "Descrição do Campo Atualizado": "Corretora8 que Vendeu o Ativo"
+    },
+    "90": {
+        "Campo Series 4": "Venda9",
+        "Campo Genérico": "Venda9",
+        "Descrição do Campo Atualizado": "Preco da 9 Melhor Oferta de Venda"
+    },
+    "91": {
+        "Campo Series 4": "QtdeMOVenda9",
+        "Campo Genérico": "QtdeMOVenda9",
+        "Descrição do Campo Atualizado": "Qtde da 9 Melhor Oferta de Venda"
+    },
+    "92": {
+        "Campo Series 4": "AgVenda9",
+        "Campo Genérico": "AgVenda9",
+        "Descrição do Campo Atualizado": "Corretora9 que Vendeu o Ativo"
+    },
+    "93": {
+        "Campo Series 4": "Venda10",
+        "Campo Genérico": "Venda10",
+        "Descrição do Campo Atualizado": "Preco da 10 Melhor Oferta de Venda"
+    },
+    "94": {
+        "Campo Series 4": "QtdeMOVenda10",
+        "Campo Genérico": "QtdeMOVenda10",
+        "Descrição do Campo Atualizado": "Qtde da 10 Melhor Oferta de Venda"
+    },
+    "95": {
+        "Campo Series 4": "AgVenda10",
+        "Campo Genérico": "AgVenda10",
+        "Descrição do Campo Atualizado": "Corretora10 que Vendeu o Ativo"
+    },
+    "96": {
+        "Campo Series 4": "Compra6",
+        "Campo Genérico": "Compra6",
+        "Descrição do Campo Atualizado": "Preco da 6 Melhor Oferta de Compra"
+    },
+    "97": {
+        "Campo Series 4": "QtdeMOCompra6",
+        "Campo Genérico": "QtdeMOCompra6",
+        "Descrição do Campo Atualizado": "Qtde da 6 Melhor Oferta de Compra"
+    },
+    "98": {
+        "Campo Series 4": "AgCompra6",
+        "Campo Genérico": "AgCompra6",
+        "Descrição do Campo Atualizado": "Corretora6 que Comprou o Ativo"
+    },
+    "99": {
+        "Campo Series 4": "Compra7",
+        "Campo Genérico": "Compra7",
+        "Descrição do Campo Atualizado": "Preco da 7 Melhor Oferta de Compra"
+    },
+    "9A": {
+        "Campo Series 4": "QtdeMOCompra7",
+        "Campo Genérico": "QtdeMOCompra7",
+        "Descrição do Campo Atualizado": "Qtde da 7 Melhor Oferta de Compra"
+    },
+    "9B": {
+        "Campo Series 4": "AgCompra7",
+        "Campo Genérico": "AgCompra7",
+        "Descrição do Campo Atualizado": "Corretora7 que Comprou o Ativo"
+    },
+    "9C": {
+        "Campo Series 4": "Compra8",
+        "Campo Genérico": "Compra8",
+        "Descrição do Campo Atualizado": "Preco da 8 Melhor Oferta de Compra"
+    },
+    "9D": {
+        "Campo Series 4": "QtdeMOCompra8",
+        "Campo Genérico": "QtdeMOCompra8",
+        "Descrição do Campo Atualizado": "Qtde da 8 Melhor Oferta de Compra"
+    },
+    "9E": {
+        "Campo Series 4": "AgCompra8",
+        "Campo Genérico": "AgCompra8",
+        "Descrição do Campo Atualizado": "Corretora8 que Comprou o Ativo"
+    },
+    "9F": {
+        "Campo Series 4": "Compra9",
+        "Campo Genérico": "Compra9",
+        "Descrição do Campo Atualizado": "Preco da 9 Melhor Oferta de Compra"
+    },
+    "A0": {
+        "Campo Series 4": "QtdeMOCompra9",
+        "Campo Genérico": "QtdeMOCompra9",
+        "Descrição do Campo Atualizado": "Qtde da 9 Melhor Oferta de Compra"
+    },
+    "A1": {
+        "Campo Series 4": "AgCompra9",
+        "Campo Genérico": "AgCompra9",
+        "Descrição do Campo Atualizado": "Corretora9 que Comprou o Ativo"
+    },
+    "A2": {
+        "Campo Series 4": "Compra10",
+        "Campo Genérico": "Compra10",
+        "Descrição do Campo Atualizado": "Preco da 10 Melhor Oferta de Compra"
+    },
+    "A3": {
+        "Campo Series 4": "QtdeMOCompra10",
+        "Campo Genérico": "QtdeMOCompra10",
+        "Descrição do Campo Atualizado": "Qtde da 10 Melhor Oferta de Compra"
+    },
+    "A4": {
+        "Campo Series 4": "AgCompra10",
+        "Campo Genérico": "AgCompra10",
+        "Descrição do Campo Atualizado": "Corretora10 que Comprou o Ativo"
+    },
+    "A5": {
+        "Campo Series 4": "TunelRejInf",
+        "Campo Genérico": "TunelRejInf",
+        "Descrição do Campo Atualizado": "Limite Inferior do Tunel de Rejeicao "
+    },
+    "A6": {
+        "Campo Series 4": "TunelRejSup",
+        "Campo Genérico": "TunelRejSup",
+        "Descrição do Campo Atualizado": "Limite Inferior do Tunel de Rejeicao "
+    },
+    "A7": {
+        "Campo Series 4": "TunelLeilaoInf",
+        "Campo Genérico": "TunelLeilaoInf",
+        "Descrição do Campo Atualizado": "Limite Inferior do Tunel de Leilao "
+    },
+    "A8": {
+        "Campo Series 4": "TunelLeilaoSup",
+        "Campo Genérico": "TunelLeilaoSup",
+        "Descrição do Campo Atualizado": "Limite Superior do Tunel de Leilao "
+    },
+    "A9": {
+        "Campo Series 4": "QtdeMinOferta",
+        "Campo Genérico": "QtdeMinOferta",
+        "Descrição do Campo Atualizado": "Qtde Minima Oferta"
+    },
+    "AA": {
+        "Campo Series 4": "QtdeMaxOferta",
+        "Campo Genérico": "QtdeMaxOferta",
+        "Descrição do Campo Atualizado": "Qtde Maxima Oferta "
+    },
+    "AB": {
+        "Campo Series 4": "FatorCotacao",
+        "Campo Genérico": "FatorCotacao",
+        "Descrição do Campo Atualizado": "Fator de Cotacao "
+    }
+}

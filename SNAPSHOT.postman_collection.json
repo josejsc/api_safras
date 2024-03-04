@@ -1,0 +1,648 @@
+{
+	"info": {
+		"_postman_id": "6bc769f7-af7b-4292-924d-3d68b1325e93",
+		"name": "SNAPSHOT",
+		"description": "CMA Streamer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19096447"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"msg_id\",0);"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response has correct body\", function() {",
+							"    var jsonData = pm.response.json();",
+							"    var _sessionid = jsonData.sessionId;",
+							"    pm.expect(_sessionid).to.not.be.null;",
+							"    pm.environment.set(\"sessionId\", _sessionid);",
+							"    let _msg_id = parseInt(pm.environment.get(\"msg_id\")) || 0;",
+							"    pm.environment.set(\"msg_id\",_msg_id + 1);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "JSONRequest",
+							"value": "{\"id\":{{msg_id}},\"oms\":{\"ip\":\"0.0.0.0\",\"channel\":\"API\",\"language\":\"PT\"},\"pass\":\"{{str_passwd}}\",\"service\":\"m\",\"name\":\"LoginRequest\",\"sessionId\":\"\",\"transport\":\"Polling\",\"type\":\"s\",\"sync\":true,\"version\":1,\"user\":\"{{str_user}}\"}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{str_host}}/execute",
+					"host": [
+						"{{str_host}}"
+					],
+					"path": [
+						"execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Quotes - F",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response has correct body\", function() {",
+							"    var jsonData = pm.response.json();",
+							"    var _sessionid = jsonData.sessionId;",
+							"    pm.expect(_sessionid).to.not.be.null;",
+							"    pm.environment.set(\"sessionId\", _sessionid);",
+							"    let _msg_id = parseInt(pm.environment.get(\"msg_id\")) || 0;",
+							"    pm.environment.set(\"msg_id\",_msg_id + 1);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "JSONRequest",
+							"value": "{\"id\":{{msg_id}},\"name\":\"QuotesRequest\",\"sessionId\":\"{{sessionId}}\",\"type\":\"n\",\"sync\":true,\"timeoutHandler\":120,\"failActionType\":\"alert\",\"fields\":[\"10\",\"24\",\"28\"],\"realtime\":true,\"symbols\":[{\"sourceId\":\"87\",\"symbol\":\"CURVA DE DOLAR 7D\"}, {\"sourceId\":\"87\",\"symbol\":\"CURVA DE DOLAR 30D\"}],\"sign\":{{signfalse}}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{str_host}}/execute",
+					"host": [
+						"{{str_host}}"
+					],
+					"path": [
+						"execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Quotes",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response has correct body\", function() {",
+							"    var jsonData = pm.response.json();",
+							"    var _sessionid = jsonData.sessionId;",
+							"    pm.expect(_sessionid).to.not.be.null;",
+							"    pm.environment.set(\"sessionId\", _sessionid);",
+							"    let _msg_id = parseInt(pm.environment.get(\"msg_id\")) || 0;",
+							"    pm.environment.set(\"msg_id\",_msg_id + 1);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "JSONRequest",
+							"value": "{\"id\":{{msg_id}},\"name\":\"QuotesRequest\",\"sessionId\":\"{{sessionId}}\",\"type\":\"n\",\"sync\":true,\"timeoutHandler\":120,\"failActionType\":\"alert\",\"fields\":\"\",\"realtime\":true,\"symbols\":[{\"sourceId\":\"100\",\"symbol\":\"MIL ACREU\"}, {\"sourceId\":\"100\",\"symbol\":\"MIL POA\"}],\"sign\":{{sign}}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{str_host}}/execute",
+					"host": [
+						"{{str_host}}"
+					],
+					"path": [
+						"execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change Password",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response has correct body\", function() {",
+							"    var jsonData = pm.response.json();",
+							"    var _sessionid = jsonData.sessionId;",
+							"    pm.expect(_sessionid).to.not.be.null;",
+							"    pm.environment.set(\"sessionId\", _sessionid);",
+							"    let _msg_id = parseInt(pm.environment.get(\"msg_id\")) || 0;",
+							"    pm.environment.set(\"msg_id\",_msg_id + 1);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "JSONRequest",
+							"value": "{\"type\":\"q\", \"name\":\"ChangeAdvPasswordRequest\", \"id\":{{msg_id}}, \"sync\":true, \"advUser\":\"{{str_user}}\", \"advPsw\":\"{{str_passwd}}\", \"advNewPsw\":\"Padrao01\", \"sessionId\":\"{{sessionId}}\"}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{str_host}}/execute",
+					"host": [
+						"{{str_host}}"
+					],
+					"path": [
+						"execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SymbolSearch",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response has correct body\", function() {",
+							"    var jsonData = pm.response.json();",
+							"    var _sessionid = jsonData.sessionId;",
+							"    pm.expect(_sessionid).to.not.be.null;",
+							"    pm.environment.set(\"sessionId\", _sessionid);",
+							"    let _msg_id = parseInt(pm.environment.get(\"msg_id\")) || 0;",
+							"    pm.environment.set(\"msg_id\",_msg_id + 1);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "JSONRequest",
+							"value": "{\"id\":{{msg_id}},\"name\":\"SymbolSearchRequest\",\"sessionId\":\"{{sessionId}}\",\"type\":\"q\",\"sync\":true,\"timeoutHandler\":120,\"failActionType\":\"closeconnection\",\"source\":100,\"max\":100,\"symbol\":\"SOJA\",\"description\":\"\",\"market\":\"\",\"page\":0,\"match\":false}\n",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{str_host}}/execute",
+					"host": [
+						"{{str_host}}"
+					],
+					"path": [
+						"execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "News",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response has correct body\", function() {",
+							"    var jsonData = pm.response.json();",
+							"    var _sessionid = jsonData.sessionId;",
+							"    pm.expect(_sessionid).to.not.be.null;",
+							"    pm.environment.set(\"sessionId\", _sessionid);",
+							"    let _msg_id = parseInt(pm.environment.get(\"msg_id\")) || 0;",
+							"    pm.environment.set(\"msg_id\",_msg_id + 1);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "JSONRequest",
+							"value": "{\"id\":{{msg_id}},\"name\":\"NewsSignRequest\",\"sessionId\":\"{{sessionId}}\",\"type\":\"q\",\"sync\":true,\"timeoutHandler\":120,\"failActionType\":\"alert\",\"sourceId\":54,\"quantity\":30,\"importantFilter\":false,\"dateFilter\":\"\",\"textFilter\":\"\",\"important\":false,\"subjectFilter\":\"\"}\n",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{str_host}}/execute",
+					"host": [
+						"{{str_host}}"
+					],
+					"path": [
+						"execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "News Key",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response has correct body\", function() {",
+							"    var jsonData = pm.response.json();",
+							"    var _sessionid = jsonData.sessionId;",
+							"    pm.expect(_sessionid).to.not.be.null;",
+							"    pm.environment.set(\"sessionId\", _sessionid);",
+							"    let _msg_id = parseInt(pm.environment.get(\"msg_id\")) || 0;",
+							"    pm.environment.set(\"msg_id\",_msg_id + 1);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "JSONRequest",
+							"value": "{\"id\":{{msg_id}},\"name\":\"NewsRequest\",\"sessionId\":\"{{sessionId}}\",\"type\":\"q\",\"sync\":true,\"timeoutHandler\":120, \"failActionType\":\"alert\",\"source\":131,\"sequence\":0,\"date\":\"\",\"key\":\"1314300073\"}\n",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{str_host}}/execute",
+					"host": [
+						"{{str_host}}"
+					],
+					"path": [
+						"execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Interpolation Calculator",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response has correct body\", function() {",
+							"    var jsonData = pm.response.json();",
+							"    var _sessionid = jsonData.sessionId;",
+							"    pm.expect(_sessionid).to.not.be.null;",
+							"    pm.environment.set(\"sessionId\", _sessionid);",
+							"    let _msg_id = parseInt(pm.environment.get(\"msg_id\")) || 0;",
+							"    pm.environment.set(\"msg_id\",_msg_id + 1);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"var date  = new Date();",
+							"date.setDate(date.getDate() + 62);",
+							"var res = date.toISOString().slice(0,10).replace(/-/g,\"\");",
+							"pm.environment.set(\"dateTo\",res);",
+							"",
+							"var rightNow =(new Date()).toISOString().slice(0,10).replace(/-/g,\"\");",
+							"pm.environment.set(\"dateFrom\",rightNow);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "JSONRequest",
+							"value": "{\"id\":{{msg_id}},\"sessionId\":\"{{sessionId}}\",\"name\":\"InterpolationCalculatorRequest\",\"type\":\"q\",\"sync\":true,\"symbol\":{\"sourceId\":\"87\",\"symbol\":\"CURVA DE DOLAR\"},\"startDate\":\"{{dateFrom}}\",\"endDate\":\"{{dateTo}}\"}\n",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{str_host}}/execute",
+					"host": [
+						"{{str_host}}"
+					],
+					"path": [
+						"execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IntradayGraph",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response has correct body\", function() {",
+							"    var jsonData = pm.response.json();",
+							"    var _sessionid = jsonData.sessionId;",
+							"    pm.expect(_sessionid).to.not.be.null;",
+							"    pm.environment.set(\"sessionId\", _sessionid);",
+							"    let _msg_id = parseInt(pm.environment.get(\"msg_id\")) || 0;",
+							"    pm.environment.set(\"msg_id\",_msg_id + 1);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"var rightNow =(new Date()).toISOString().slice(0,10);",
+							"var hora = \" 00:00:00\";",
+							"var time= rightNow.concat(hora);",
+							"pm.environment.set(\"daydateFrom\",time);",
+							"",
+							"var date =(new Date()).toISOString().slice(0,10);",
+							"var horaFim = \" 23:00:00\";",
+							"var timeFim= date.concat(horaFim);",
+							"pm.environment.set(\"daydateTo\",timeFim);",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "JSONRequest",
+							"value": "{\"id\":{{msg_id}},\"name\":\"IntradayGraphRequest\",\"sessionId\":\"{{sessionId}}\",\"type\":\"c\",\"sync\":true,\"timeoutHandler\":120,\"failActionType\":\"alert\",\"symbolId\":{\"sourceId\":\"30\",\"symbol\":\"ZSX9\"},\"dateFrom\":\"{{daydateFrom}}\",\"dateTo\":\"{{daydateTo}}\",\"sign\":{{signfalse}},\"period\":15,\"version\":3}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{str_host}}/execute",
+					"host": [
+						"{{str_host}}"
+					],
+					"path": [
+						"execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DailyGraph",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response has correct body\", function() {",
+							"    var jsonData = pm.response.json();",
+							"    var _sessionid = jsonData.sessionId;",
+							"    pm.expect(_sessionid).to.not.be.null;",
+							"    pm.environment.set(\"sessionId\", _sessionid);",
+							"    let _msg_id = parseInt(pm.environment.get(\"msg_id\")) || 0;",
+							"    pm.environment.set(\"msg_id\",_msg_id + 1);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"var date  = new Date();",
+							"date.setDate(date.getDate() - 120);",
+							"var res = date.toISOString().slice(0,10);",
+							"pm.environment.set(\"dateFrom\",res);",
+							"",
+							"var rightNow  = new Date();",
+							"rightNow.setDate(rightNow.getDate() - 1);",
+							"var resRightNow = rightNow.toISOString().slice(0,10);",
+							"pm.environment.set(\"dateTo\",resRightNow);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "JSONRequest",
+							"value": "{\"id\":{{msg_id}},\"name\":\"DailyGraphRequest\",\"sessionId\":\"{{sessionId}}\",\"type\":\"c\",\"sync\":true,\"timeoutHandler\":120,\"failActionType\":\"alert\",\"symbolId\":{\"sourceId\":\"30\",\"symbol\":\"ZSN2\"},\"dateFrom\":\"{{dateFrom}}\",\"dateTo\":\"{{dateTo}}\",\"sign\":{{signfalse}},\"period\":1,\"version\":3}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{str_host}}/execute",
+					"host": [
+						"{{str_host}}"
+					],
+					"path": [
+						"execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response has correct body\", function() {",
+							"    var jsonData = pm.response.json();",
+							"    let _msg_id = parseInt(pm.environment.get(\"msg_id\")) || 0;",
+							"    pm.environment.set(\"msg_id\",_msg_id + 1);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "JSONRequest",
+							"value": "{\"id\":{{msg_id}},\"name\":\"LogoutAdvRequest\",\"sessionId\":\"{{sessionId}}\",\"type\":\"s\",\"sync\":true,\"version\":1,\"advUser\":\"{{str_user}}\",\"reason\":\"texto\"}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{str_host}}/execute",
+					"host": [
+						"{{str_host}}"
+					],
+					"path": [
+						"execute"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
